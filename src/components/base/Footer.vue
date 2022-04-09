@@ -13,14 +13,7 @@
               <router-link
                 v-for="route in navigation"
                 :key="route.label"
-                class="
-                  block
-                  with-underline
-                  w-max
-                  transition
-                  hover:text-accent
-                  capitalize
-                "
+                class="block with-underline w-max transition hover:text-accent capitalize"
                 :to="route.path"
                 >{{ route.label }}</router-link
               >
@@ -33,31 +26,18 @@
                 Street <br />
                 City, Province POSTAL CODE
               </address>
-              <a
-                href="tel:+19056379255"
-                class="block with-underline w-max hover:text-accent"
+              <a href="tel:+19056379255" class="block with-underline w-max hover:text-accent"
                 >Phone: xxx-xxx-xxxx
               </a>
-              <a
-                href="mailto:info@teccweb.com"
-                class="block with-underline w-max hover:text-accent"
+              <a href="mailto:contact@mail.com" class="block with-underline w-max hover:text-accent"
                 >Email: email@email.com</a
               >
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="
-          mt-8
-          pt-8
-          border-t border-gray-200
-          md:flex md:items-center md:justify-between
-        "
-      >
-        <p class="text-base text-gray-400">
-          &copy; Copyright 2021 Company Name
-        </p>
+      <div class="mt-8 pt-8 border-t border-gray-200 md:flex md:items-center md:justify-between">
+        <p class="text-base text-gray-400">&copy; Copyright 2021 Company Name</p>
       </div>
     </div>
   </footer>

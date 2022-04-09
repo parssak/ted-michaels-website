@@ -1,7 +1,7 @@
 <template>
   <Header title="videos" />
   <Container>
-    <div class="mt-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
       <div v-for="v in videos" :key="v.title" class="">
         <div class="rounded-lg object-cover relative overflow-hidden aspect-w-3 aspect-h-2">
           <img src="@/assets/images/torch.png" alt="holding a torch" />
@@ -14,6 +14,32 @@
         <h3 class="text-2xl mt-4">{{ v.title }} | {{ v.topic }}</h3>
       </div>
     </div>
+    <nav
+      class="py-3 flex items-center justify-between border-t border-accent-darkest mt-6"
+      aria-label="Pagination"
+    >
+      <div class="hidden sm:block">
+        <p class="text-sm text-accent-darkest">
+          Showing
+          {{ " " }}
+          <span class="font-medium">1</span>
+          {{ " " }}
+          to
+          {{ " " }}
+          <span class="font-medium">10</span>
+          {{ " " }}
+          of
+          {{ " " }}
+          <span class="font-medium">20</span>
+          {{ " " }}
+          results
+        </p>
+      </div>
+      <div class="flex-1 flex justify-between sm:justify-end">
+        <a href="#" class="btn btn-lg"> Previous </a>
+        <a href="#" class="ml-3 btn btn-lg"> Next </a>
+      </div>
+    </nav>
   </Container>
 
   <SimpleBrandCTA />

@@ -6,21 +6,8 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 rounded-md overflow-hidden">
           <!-- Contact information -->
-          <div
-            class="
-              relative
-              overflow-hidden
-              py-10
-              px-6
-              bg-accent-dark
-              sm:px-10
-              xl:p-12
-            "
-          >
-            <div
-              class="absolute inset-0 pointer-events-none sm:hidden"
-              aria-hidden="true"
-            >
+          <div class="relative overflow-hidden py-10 px-6 bg-accent sm:px-10 xl:p-12">
+            <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
               <svg
                 class="absolute inset-0 w-full h-full"
                 width="343"
@@ -94,16 +81,7 @@
               </svg>
             </div>
             <div
-              class="
-                hidden
-                absolute
-                top-0
-                right-0
-                bottom-0
-                w-1/2
-                pointer-events-none
-                lg:block
-              "
+              class="hidden absolute top-0 right-0 bottom-0 w-1/2 pointer-events-none lg:block"
               aria-hidden="true"
             >
               <svg
@@ -136,32 +114,20 @@
               </svg>
             </div>
             <h2 class="text-xl font-medium text-white">Contact information</h2>
-            <p class="mt-6 text-base text-indigo-50 max-w-3xl">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-              massa dictumst amet. Sapien tortor lacus arcu.
+            <p class="mt-6 text-base text-white max-w-3xl">
+              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet.
+              Sapien tortor lacus arcu.
             </p>
             <dl class="mt-8 space-y-6">
               <dt><span class="sr-only">Phone number</span></dt>
               <dd class="flex text-base text-accent-lightest">
-                <PhoneIcon
-                  class="flex-shrink-0 w-6 h-6 text-indigo-200"
-                  aria-hidden="true"
-                />
-                <a
-                  href="tel:+1-905-526-9800"
-                  class="ml-3 hover:text-accent-lightest with-underline"
-                  >+1 (905)-526-9800</a
-                >
+                <PhoneIcon class="flex-shrink-0 w-6 h-6 text-accent-lightest" aria-hidden="true" />
+                <a href="tel:+1-905-526-9800" class="ml-3 hover:underline">+1 (905)-526-9800</a>
               </dd>
               <dt><span class="sr-only">Email</span></dt>
               <dd class="flex text-base text-accent-lightest">
-                <MailIcon
-                  class="flex-shrink-0 w-6 h-6 text-indigo-200"
-                  aria-hidden="true"
-                />
-                <a href="mailto:contact@mail.com" class="ml-3 with-underline"
-                  >contact@mail.com</a
-                >
+                <MailIcon class="flex-shrink-0 w-6 h-6 text-accent-lightest" aria-hidden="true" />
+                <a href="mailto:contact@mail.com" class="ml-3 hover:underline">contact@mail.com</a>
               </dd>
             </dl>
           </div>
@@ -175,9 +141,7 @@
               class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <div>
-                <label
-                  for="first-name"
-                  class="block text-sm font-medium text-gray-900"
+                <label for="first-name" class="block text-sm font-medium text-gray-900"
                   >First name</label
                 >
                 <div class="mt-1">
@@ -204,9 +168,7 @@
                 </div>
               </div>
               <div>
-                <label
-                  for="last-name"
-                  class="block text-sm font-medium text-gray-900"
+                <label for="last-name" class="block text-sm font-medium text-gray-900"
                   >Last name</label
                 >
                 <div class="mt-1">
@@ -230,11 +192,7 @@
                 </div>
               </div>
               <div>
-                <label
-                  for="email"
-                  class="block text-sm font-medium text-gray-900"
-                  >Email</label
-                >
+                <label for="email" class="block text-sm font-medium text-gray-900">Email</label>
                 <div class="mt-1">
                   <input
                     id="email"
@@ -257,14 +215,8 @@
               </div>
               <div>
                 <div class="flex justify-between">
-                  <label
-                    for="phone"
-                    class="block text-sm font-medium text-gray-900"
-                    >Phone</label
-                  >
-                  <span id="phone-optional" class="text-sm text-gray-500"
-                    >Optional</span
-                  >
+                  <label for="phone" class="block text-sm font-medium text-gray-900">Phone</label>
+                  <span id="phone-optional" class="text-sm text-gray-500">Optional</span>
                 </div>
                 <div class="mt-1">
                   <input
@@ -288,29 +240,11 @@
                 </div>
               </div>
               <div class="sm:col-span-2">
-                <label
-                  for="subject"
-                  class="block text-sm font-medium text-gray-900"
-                  >Practice Area</label
-                >
-                <div class="mt-1">
-                  <select id="choice" name="choice" class="mt-1">
-                    <option>Practice 1</option>
-                    <option selected="">Practice 2</option>
-                    <option>Practice 3</option>
-                  </select>
-                </div>
-              </div>
-              <div class="sm:col-span-2">
                 <div class="flex justify-between">
-                  <label
-                    for="message"
-                    class="block text-sm font-medium text-gray-900"
+                  <label for="message" class="block text-sm font-medium text-gray-900"
                     >Message</label
                   >
-                  <span id="message-max" class="text-sm text-gray-500"
-                    >Max. 500 characters</span
-                  >
+                  <span id="message-max" class="text-sm text-gray-500">Max. 500 characters</span>
                 </div>
                 <div class="mt-1">
                   <textarea
@@ -351,10 +285,7 @@
                     text-white
                     bg-brown
                     hover:bg-brown-light
-                    focus:outline-none
-                    focus:ring-2
-                    focus:ring-offset-2
-                    focus:ring-accent-dark
+                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-dark
                     sm:w-auto
                   "
                 >
