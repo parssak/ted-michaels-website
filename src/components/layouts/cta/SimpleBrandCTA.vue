@@ -1,13 +1,13 @@
 <template>
-  <div class="">
+  <Container>
     <div
       class="
         max-w-7xl
         mx-auto
         py-12
         px-4
-        sm:px-6
-        lg:py-20 lg:px-8
+        sm:px-8
+        lg:py-20
         bg-accent-light
         rounded-xl
         flex flex-col
@@ -35,16 +35,15 @@
           <img src="@/assets/instagram.svg" alt="" />
         </a>
       </div>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <button class="btn btn-xl mt-12" path="/contact">Send an email</button>
-      </div>
+      <button class="btn btn-xl mt-12" path="/contact">Send an email</button>
     </div>
-  </div>
+  </Container>
 </template>
 
 <script>
+import Container from "../Container.vue";
 import Button from "@/components/base/Button.vue";
 export default {
-  components: { Button },
+  components: { Button, Container },
 };
 </script>

@@ -104,7 +104,7 @@
     </p>
     <div class="mt-6 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
       <div v-for="v in videos" :key="v.title" class="">
-        <div class="rounded-lg object-cover relative rounded-lg overflow-hidden aspect-w-3 aspect-h-2">
+        <div class="rounded-lg object-cover relative overflow-hidden aspect-w-3 aspect-h-2">
           <img src="@/assets/images/torch.png" alt="holding a torch" />
           <div class="absolute inset-0 bg-black bg-opacity-50 grid place-items-center">
             <button>
