@@ -1,19 +1,13 @@
 <template>
-  <main class="relative">
+  <main class="relative min-h-screen">
     <div class="absolute inset-0 w-full h-full">
-      <img
-        src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
-        alt=""
-        class="w-full h-full object-cover"
-      />
-      <div
-        class="absolute inset-0 bg-accent-dark opacity-20 mix-blend-multiply"
-        aria-hidden="true"
-      />
+      <img src="@/assets/images/mac.png" alt="" class="w-full h-full object-cover" />
     </div>
-    <Container full>
-      <slot></slot>
-    </Container>
+    <div class="absolute inset-0 grid items-center pb-12">
+      <Container>
+        <slot></slot>
+      </Container>
+    </div>
   </main>
 </template>
 
