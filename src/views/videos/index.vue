@@ -36,8 +36,8 @@
         </p>
       </div>
       <div class="flex-1 flex justify-between sm:justify-end">
-        <a href="#" class="btn btn-lg"> Previous </a>
-        <a href="#" class="ml-3 btn btn-lg"> Next </a>
+        <button class="btn btn-lg"> Previous </button>
+        <button class="ml-3 btn btn-lg"> Next </button>
       </div>
     </nav>
   </Container>
