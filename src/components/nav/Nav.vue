@@ -11,7 +11,7 @@
           </router-link>
         </div>
 
-        <PopoverGroup as="nav" class="hidden md:flex space-x-6 xl:space-x-7 flex-1">
+        <PopoverGroup as="nav" class="hidden md:flex space-x-6 xl:space-x-7 flex-1 items-center justify-center">
           <NavItem
             v-for="item in navigation"
             :path="item.path"
