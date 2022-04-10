@@ -1,10 +1,10 @@
 <template>
   <div class="bg-gray-100">
     <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-      <div class="relative bg-white shadow-xl rounded-md">
+      <div class="relative bg-white shadow-xl rounded-xl">
         <h2 class="sr-only">Contact us</h2>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 rounded-md overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-3 rounded-xl overflow-hidden">
           <!-- Contact information -->
           <div class="relative overflow-hidden py-10 px-6 bg-accent sm:px-10 xl:p-12">
             <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">

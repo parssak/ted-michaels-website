@@ -10,7 +10,7 @@
     </div>
     <Container>
       <div class="py-8">
-        <h1 class="text-white capitalize">
+        <h1 class="text-white capitalize ">
           {{ title }}
         </h1>
         <p v-if="description" class="mt-6 text-xl text-indigo-100 max-w-3xl">
