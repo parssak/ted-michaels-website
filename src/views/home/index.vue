@@ -27,19 +27,6 @@
     />
   </Split>
 
-  <!-- In The Community -->
-  <!-- <Container >
-    <div class="text-center flex flex-col items-center">
-      <h2 class="mb-0"></h2>
-      <div class="w-20 h-1 my-5 bg-accent-light"></div>
-      <p class="max-w-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare scelerisque eleifend
-        faucibus lacus pharetra, arcu libero.
-      </p>
-    </div>
-    <div class="todo">Images</div>
-  </Container> -->
-
   <Carousel title="In The Community" class="bg-accent-lightest" />
 
   <!-- Services Offered -->
@@ -92,7 +79,7 @@
   </Container>
 
   <!-- Container -->
-  <Container>
+  <Container class="bg-accent-lightest">
     <div class="flex justify-between items-center">
       <h2>Video Content</h2>
       <div class="hidden md:block">
