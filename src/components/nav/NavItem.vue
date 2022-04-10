@@ -105,7 +105,7 @@
         </transition>
       </Popover>
     </div>
-    <div v-else class="nav-item">
+    <div v-else class="nav-item whitespace-nowrap">
       <router-link :to="path">
         <slot> </slot>
       </router-link>

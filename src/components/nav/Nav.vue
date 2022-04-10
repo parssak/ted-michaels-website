@@ -10,6 +10,35 @@
             </div>
           </router-link>
         </div>
+
+        <PopoverGroup as="nav" class="hidden md:flex space-x-6 xl:space-x-7 flex-1">
+          <NavItem
+            v-for="item in navigation"
+            :path="item.path"
+            :key="item.label"
+            :dropdownItems="item.dropdownItems"
+          >
+            {{ item.label }}
+          </NavItem>
+        </PopoverGroup>
+
+        <div class="flex-1 md:flex items-center justify-end hidden">
+          <div class="flex items-center space-x-3">
+            <a href="#">
+              <img src="@/assets/twitter.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="@/assets/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="@/assets/linkedin.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="@/assets/instagram.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
             class="
@@ -28,16 +57,6 @@
             <MenuIcon class="h-6 w-6 text-accent" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-6 xl:space-x-7">
-          <NavItem
-            v-for="item in navigation"
-            :path="item.path"
-            :key="item.label"
-            :dropdownItems="item.dropdownItems"
-          >
-            {{ item.label }}
-          </NavItem>
-        </PopoverGroup>
       </div>
     </div>
 

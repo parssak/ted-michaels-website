@@ -143,7 +143,7 @@ select {
                     capitalize
                     transition
                     hover:bg-accent-light
-                    hover:text-accent-dark;
+                    hover:text-accent;
 }
 
 .nav-item-mobile__text {
@@ -163,7 +163,7 @@ nav .router-link-active:not(.no-show-active) {
 }
 
 nav .router-link-active:not(.no-show-active).nav-item-mobile {
-  @apply bg-accent;
+  @apply bg-accent text-white;
 }
 
 nav .router-link-active:not(.no-show-active):not(.nav-item-mobile)::before {
